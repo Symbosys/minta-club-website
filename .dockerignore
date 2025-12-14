@@ -1,0 +1,15 @@
+.next
+node_modules
+bun.lockb
+*.log
+
+# ⛔ IGNORE ALL IMAGES (biggest size)
+public/images/*
+public/uploads/*
+public/assets/*
+assets/*
+static/*
+
+# optional
+.git
+docker/
