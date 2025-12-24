@@ -13,7 +13,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Minta Club",
+  title: "Minta Club pvt ltd",
   description: "Official website of Minta Club",
   verification: {
     google: "faFHO98_w-lRsmzv_ouRd5tJToPYSF1dIOBECvcO_OQ",
