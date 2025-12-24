@@ -16,8 +16,8 @@ export const metadata: Metadata = {
   title: "Minta Club",
   description: "Official website of Minta Club",
   verification: {
-    google: "faFHO98_w-lRsmzv_ouRd5tJToPYSF1dIOBECvcO_OQ"
-  }
+    google: "faFHO98_w-lRsmzv_ouRd5tJToPYSF1dIOBECvcO_OQ",
+  },
 };
 
 export default function RootLayout({
@@ -27,6 +27,12 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <head>
+        <meta
+          name="google-site-verification"
+          content="faFHO98_w-lRsmzv_ouRd5tJToPYSF1dIOBECvcO_OQ"
+        />
+      </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
