@@ -15,11 +15,11 @@ export const Header = () => (
   <header className="fixed top-0 left-0 w-full z-50 px-6 py-6 md:px-12 flex justify-between items-center mix-blend-difference text-white">
     <a href="/" className="font-serif text-xl font-bold tracking-tighter hover:opacity-50 transition-opacity">MINTA CLUB.</a>
     <nav className="hidden md:flex gap-8 text-xs font-bold tracking-widest uppercase">
-      {["About", "Brands", "Philosophy", "Contact"].map((item) => (
+      {/* {["About", "Brands", "Philosophy", "Contact"].map((item) => (
         <a key={item} href={`#${item.toLowerCase()}`} className="hover:opacity-50 transition-opacity cursor-pointer">
           {item}
         </a>
-      ))}
+      ))} */}
     </nav>
     <div className="text-xs font-bold uppercase border border-white/30 px-4 py-2 rounded-full hover:bg-white hover:text-black transition-colors cursor-pointer">
       Menu
@@ -337,14 +337,14 @@ const FeaturesList = () => {
   );
 };
 export const Footer = () => (
-  <footer className="bg-[#0A0A0A] text-[#FDFBF7] pt-40 pb-12 px-6 md:px-12 relative overflow-hidden">
+  <footer className="bg-[#0A0A0A] text-[#FDFBF7] pt-24 sm:pt-40 pb-8 sm:pb-12 px-4 sm:px-6 md:px-12 relative overflow-hidden">
     <div className="max-w-7xl mx-auto relative z-10">
-      <div className="mb-20">
-        <h2 className="font-serif text-[12vw] leading-[0.8] tracking-tighter mb-8">
+      <div className="mb-16 sm:mb-20">
+        <h2 className="font-serif text-[12vw] leading-[0.8] tracking-tighter mb-4 sm:mb-8">
           LET'S<br />BUILD.
         </h2>
-        <div className="flex flex-col md:flex-row gap-8 items-start md:items-center">
-          <button className="bg-white text-black px-8 py-4 rounded-full font-bold text-sm tracking-widest hover:bg-indigo-500 hover:text-white transition-colors duration-300">
+        <div className="flex flex-col md:flex-row gap-6 sm:gap-8 items-start md:items-center">
+          <button className="bg-white text-black px-6 sm:px-8 py-3 sm:py-4 rounded-full font-bold text-sm tracking-widest hover:bg-indigo-500 hover:text-white transition-colors duration-300">
             CONTACT US
           </button>
           <span className="text-sm opacity-50 max-w-xs">
@@ -352,8 +352,7 @@ export const Footer = () => (
           </span>
         </div>
       </div>
-
-      <div className="grid grid-cols-2 md:grid-cols-4 gap-8 pt-12 border-t border-white/10 text-xs font-bold uppercase tracking-widest opacity-60">
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6 sm:gap-8 pt-8 sm:pt-12 border-t border-white/10 text-xs font-bold uppercase tracking-widest opacity-60">
         <div>
           <p className="mb-4 text-white">Socials</p>
           <ul className="space-y-2 font-normal normal-case">
@@ -378,7 +377,7 @@ export const Footer = () => (
             <li><a href="/contact-us" className="hover:text-white transition-colors">Contact Us</a></li>
           </ul>
         </div>
-        <div className="col-span-2 md:col-span-1 md:text-right">
+        <div className="col-span-1 sm:col-span-2 md:col-span-1 text-left sm:text-center md:text-right">
           <p className="normal-case font-serif text-xl opacity-100">Minta Club &copy; 2025</p>
         </div>
       </div>

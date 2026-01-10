@@ -1,44 +1,92 @@
-import { Header, Footer } from "../page";
+"use client";
+
+import PageLayout from "../../components/PageLayout";
+import { Shield, Lock, Eye, FileText } from "lucide-react";
 
 export default function PrivacyPolicyPage() {
   return (
-    <>
-      <Header />
-      <div className="min-h-screen bg-[#FDFBF7] py-20 px-6 md:px-24 pt-32">
-      <div className="max-w-4xl mx-auto">
-        <h1 className="font-serif text-5xl mb-8">Privacy Policy</h1>
-        <div className="prose prose-lg max-w-none text-gray-800 space-y-6">
-          <p className="mb-4">This privacy policy sets out how mintaclub.com uses and protects any information that you give mintaclub.com when you use this website. mintaclub.com is committed to ensuring that your privacy is protected. Should we ask you to provide certain information by which you can be identified when using this website, then you can be assured that it will only be used in accordance with this privacy statement. mintaclub.com may change this policy from time to time by updating this page. You should check this page from time to time to ensure that you are happy with any changes. Consent & terms of this Privacy Policy By using our platform (website, application or services), you have voluntarily agreed to consent & abide with this privacy policy. You have the option to disagree to abide by our privacy policy; if you choose disagree, you will not be able to access any portion of our platform or gain access to services provided on this platform. What we collect</p>
-          <h2 className="font-bold text-2xl mt-8 mb-4">We may collect the following information</h2>
-          <h2 className="font-bold text-2xl mt-8 mb-4">• name</h2>
-          <h2 className="font-bold text-2xl mt-8 mb-4">• contact information including email address</h2>
-          <h2 className="font-bold text-2xl mt-8 mb-4">• demographic information such as postcode, preferences and interests</h2>
-          <h2 className="font-bold text-2xl mt-8 mb-4">• other information relevant to customer surveys and/or offers</h2>
-          <p className="mb-4">For the exhaustive list of cookies we collect see the List of cookies we collect section. What we do with the information we gather We require this information to understand your needs and provide you with a better service, and in</p>
-          <h2 className="font-bold text-2xl mt-8 mb-4">particular for the following reasons</h2>
-          <h2 className="font-bold text-2xl mt-8 mb-4">• Internal record keeping.</h2>
-          <h2 className="font-bold text-2xl mt-8 mb-4">• We may use the information to improve our products and services.</h2>
-          <ul className="list-disc pl-6 space-y-2 mt-4 mb-4">
+    <PageLayout 
+      title="Privacy Policy"
+      description="We are committed to protecting your privacy and ensuring the security of your personal information."
+    >
+      <div className="space-y-8">
+        <div className="bg-white rounded-2xl p-8 md:p-12 shadow-sm border border-gray-100">
+          <p className="text-lg text-gray-700 leading-relaxed mb-8">
+            This privacy policy sets out how mintaclub.com uses and protects any information that you give mintaclub.com 
+            when you use this website. mintaclub.com is committed to ensuring that your privacy is protected. Should we ask 
+            you to provide certain information by which you can be identified when using this website, then you can be assured 
+            that it will only be used in accordance with this privacy statement.
+          </p>
+
+          <div className="bg-blue-50 rounded-xl p-6 mb-8 border-l-4 border-blue-500">
+            <p className="text-gray-700">
+              <strong>Note:</strong> mintaclub.com may change this policy from time to time by updating this page. You should 
+              check this page from time to time to ensure that you are happy with any changes.
+            </p>
+          </div>
+
+          <h2 className="text-3xl font-serif font-bold mt-10 mb-6 text-[#0A0A0A] border-b border-gray-200 pb-3 flex items-center gap-3">
+            <Shield className="w-8 h-8 text-indigo-600" />
+            What We Collect
+          </h2>
+          <p className="mb-6 text-gray-700">We may collect the following information:</p>
+          <ul className="list-none space-y-4 mb-8">
+            <li className="flex items-start gap-3 bg-gray-50 rounded-lg p-4">
+              <FileText className="w-5 h-5 text-indigo-600 mt-0.5 flex-shrink-0" />
+              <span className="text-gray-700">Name and contact information including email address</span>
+            </li>
+            <li className="flex items-start gap-3 bg-gray-50 rounded-lg p-4">
+              <FileText className="w-5 h-5 text-indigo-600 mt-0.5 flex-shrink-0" />
+              <span className="text-gray-700">Demographic information such as postcode, preferences and interests</span>
+            </li>
+            <li className="flex items-start gap-3 bg-gray-50 rounded-lg p-4">
+              <FileText className="w-5 h-5 text-indigo-600 mt-0.5 flex-shrink-0" />
+              <span className="text-gray-700">Other information relevant to customer surveys and/or offers</span>
+            </li>
+          </ul>
+
+          <h2 className="text-3xl font-serif font-bold mt-10 mb-6 text-[#0A0A0A] border-b border-gray-200 pb-3 flex items-center gap-3">
+            <Eye className="w-8 h-8 text-indigo-600" />
+            What We Do With The Information We Gather
+          </h2>
+          <p className="mb-4 text-gray-700">We require this information to understand your needs and provide you with a better service, and in particular for the following reasons:</p>
+          <ul className="list-disc pl-6 space-y-3 mb-8 text-gray-700">
+            <li>Internal record keeping.</li>
+            <li>We may use the information to improve our products and services.</li>
             <li>We may periodically send promotional emails about new products, special offers or other information which we think you may find interesting using the email address which you have provided.</li>
-            <li>From time to time, we may also use your information to contact you for market research purposes. We may contact you by email, phone, fax or mail. We may use the information to customise the website according to your interests.</li>
-            <li>Without identifying you personally we may use your information to provide updates on our service offerings and promotional schemes through third party advertising partners (‘TPAP’). Our TPAP may use cookies on our website as well as third party websites and social media platforms to understand customer interests to provide updates on our latest service offerings and promotional schemes that are akin to your interests. Our TPAP provide you with complete control over ads experience and you can remove ads shown to you.</li>
+            <li>From time to time, we may also use your information to contact you for market research purposes.</li>
           </ul>
-          <h2 className="font-bold text-2xl mt-8 mb-4">Security</h2>
-          <p className="mb-4">We are committed to ensuring that your information is secure. In order to prevent unauthorised access or disclosure, we have put in place suitable physical, electronic and managerial procedures to safeguard and secure the information we collect online. How we use cookies A cookie is a small file which asks permission to be placed on your computer&apos;s hard drive. Once you agree, the file is added and the cookie helps analyse web traffic or lets you know when you visit a particular site. Cookies allow web applications to respond to you as an individual. The web application can tailor its operations to your needs, likes and dislikes by gathering and remembering information about your preferences. We use traffic log cookies to identify which pages are being used. This helps us analyse data about web page traffic and improve our website in order to tailor it to customer needs. We only use this information for statistical analysis purposes and then the data is removed from the system. Overall, cookies help us provide you with a better website, by enabling us to monitor which pages you find useful and which you do not. A cookie in no way gives us access to your computer or any information about you, other than the data you choose to share with us. You can choose to accept or decline cookies. Most web browsers automatically accept cookies, but you can usually modify your browser setting to decline cookies if you prefer. This may prevent you from taking full advantage of the website. Links to other websites Our website may contain links to other websites of interest. However, once you have used these links to leave our site, you should note that we do not have any control over that other website. Therefore, we cannot be responsible for the protection and privacy of any information which you provide whilst visiting such sites and such sites are not governed by this privacy statement. You should exercise caution and look at the privacy statement applicable to the website in question. Controlling your personal information You may choose to restrict the collection or use of your personal information in the following ways:</p>
-          <ul className="list-disc pl-6 space-y-2 mt-4 mb-4">
-            <li>whenever you are asked to fill in a form on the website, look for the box that you can click to indicate that you do not want the information to be used by anybody for direct marketing purposes</li>
-            <li>if you have previously agreed to us using your personal information for direct marketing purposes, you may change your mind at any time by writing to or emailing us at customercare@mintaclub.com We will not sell, distribute or lease your personal information to third parties unless we have your permission or are required by law to do so. We may use your personal information to send you promotional information about third parties which we think you may find interesting if you tell us that you wish this to happen. You may request details of personal information which we hold about you under the Data Protection Act</li>
-            <li>A small fee will be payable. If you would like a copy of the information held on you please write to us at customercare@mintaclub.com.</li>
-          </ul>
-          <p className="mb-4">If you believe that any information we are holding on you is incorrect or incomplete, please write to or email us as soon as possible, at the above address. We will promptly correct any information found to be incorrect. How can a user opt not to disclose information with FTH? You have the option of not disclosing Your Sensitive Personal Data or Information to Us. You can also ask us to remove your data from our database by sending a mail to us at customercare@mintaclub.com. In the event that You choose not to disclose Sensitive Personal Information, you may not be able to access multiple areas of the Platform or avail our e-commerce facility / services provided on the Platform. Marketing & promotional activity FTH ( Fault Tolerant Heap) may use your information to provide you with better platform user-experience, send information on products and services which may be of interest to you, send via Short Messaging Services (SMS) marketing promotions, and share such personal information to our business partners on a need-to-know basis to render effective services for better customer experience. What is NDNC Policy? By using the Platform, you hereby authorize Us to contact You via email, phone, or SMS (Short Message Service), other applications (android or apple) linked to phone number on the contact details so provided, to furnish You with information about Our Products, Services, product delivery, marketing promotions, & other allied services offered by FTH on its platform. This authorization is licit for the mentioned purposes irrespective of whether You are registered with the NDNC (National Do Not Call) registry. Indemnity You agree to indemnify and hold FTH harmless from:(i) any actions, claims, demands, suits, damages, losses, penalties, interest and other charges and expenses (including legal fees and other dispute resolution costs) made by any third party due to or arising out of any violation of the terms of this Policy; (ii)any acts or deeds, including for any non-compliance or violation, of any applicable law, rules, regulations on Your part; or (iii) for violations committed by You. Governing Law & Severability The invalidity or unenforceability of any part of this Policy shall not prejudice or affect the validity or enforceability of the remainder of this Policy. This Policy has been prepared under the provisions of the Indian Information Technology Act, 2000 (“IT Act”) and its corresponding rules as enshrined under the Information Technology (Reasonable Security Practices and Procedures and Sensitive Personal Data or Information) Rules, 2011 (“IT Rules”) to monitor information (including sensitive personal data or information) collected, received, possessed, stored, dealt with, or handled by FTH. Grievances Should you have any grievances about the processing of your personal information or the privacy policy,</p>
-          <h2 className="font-bold text-2xl mt-8 mb-4">you may contact</h2>
-          <h2 className="font-bold text-2xl mt-8 mb-4">Minta Club Private Limited</h2>
-          <h2 className="font-bold text-2xl mt-8 mb-4">HI-76, Harmu Colony, Ranchi - 834002</h2>
-          <h2 className="font-bold text-2xl mt-8 mb-4">Email: info@mintaclub.com</h2>
+
+          <h2 className="text-3xl font-serif font-bold mt-10 mb-6 text-[#0A0A0A] border-b border-gray-200 pb-3 flex items-center gap-3">
+            <Lock className="w-8 h-8 text-indigo-600" />
+            Security
+          </h2>
+          <p className="mb-6 text-gray-700 leading-relaxed">
+            We are committed to ensuring that your information is secure. In order to prevent unauthorised access or disclosure, 
+            we have put in place suitable physical, electronic and managerial procedures to safeguard and secure the information 
+            we collect online.
+          </p>
+
+          <h2 className="text-3xl font-serif font-bold mt-10 mb-6 text-[#0A0A0A] border-b border-gray-200 pb-3">
+            How We Use Cookies
+          </h2>
+          <p className="mb-6 text-gray-700 leading-relaxed">
+            A cookie is a small file which asks permission to be placed on your computer's hard drive. Once you agree, the file 
+            is added and the cookie helps analyse web traffic or lets you know when you visit a particular site. Cookies allow 
+            web applications to respond to you as an individual. The web application can tailor its operations to your needs, 
+            likes and dislikes by gathering and remembering information about your preferences.
+          </p>
+
+          <div className="mt-12 pt-8 border-t border-gray-200 bg-gradient-to-br from-indigo-50 to-purple-50 rounded-xl p-8">
+            <h3 className="text-2xl font-bold mb-4 text-gray-900">Grievances</h3>
+            <p className="text-gray-700 mb-2 font-semibold">Minta Club Private Limited</p>
+            <p className="text-gray-700 mb-2">HI-76, Harmu Colony, Ranchi - 834002</p>
+            <p className="text-gray-700">
+              Email: <a href="mailto:info@mintaclub.com" className="text-indigo-600 hover:underline font-medium">info@mintaclub.com</a>
+            </p>
+          </div>
         </div>
       </div>
-      </div>
-      <Footer />
-    </>
+    </PageLayout>
   );
 }
