@@ -11,9 +11,9 @@ gsap.registerPlugin(ScrollTrigger);
 
 // --- COMPONENTS ---
 
-const Header = () => (
+export const Header = () => (
   <header className="fixed top-0 left-0 w-full z-50 px-6 py-6 md:px-12 flex justify-between items-center mix-blend-difference text-white">
-    <div className="font-serif text-xl font-bold tracking-tighter">MINTA CLUB.</div>
+    <a href="/" className="font-serif text-xl font-bold tracking-tighter hover:opacity-50 transition-opacity">MINTA CLUB.</a>
     <nav className="hidden md:flex gap-8 text-xs font-bold tracking-widest uppercase">
       {["About", "Brands", "Philosophy", "Contact"].map((item) => (
         <a key={item} href={`#${item.toLowerCase()}`} className="hover:opacity-50 transition-opacity cursor-pointer">
@@ -336,7 +336,7 @@ const FeaturesList = () => {
     </section>
   );
 };
-const Footer = () => (
+export const Footer = () => (
   <footer className="bg-[#0A0A0A] text-[#FDFBF7] pt-40 pb-12 px-6 md:px-12 relative overflow-hidden">
     <div className="max-w-7xl mx-auto relative z-10">
       <div className="mb-20">
@@ -365,11 +365,20 @@ const Footer = () => (
         <div>
           <p className="mb-4 text-white">Legal</p>
           <ul className="space-y-2 font-normal normal-case">
-            <li>Privacy Policy</li>
-            <li>Terms of Service</li>
+            <li><a href="/terms-and-conditions" className="hover:text-white transition-colors">Terms and Conditions</a></li>
+            <li><a href="/privacy-policy" className="hover:text-white transition-colors">Privacy Policy</a></li>
+            <li><a href="/refund-policy" className="hover:text-white transition-colors">Refund Policy</a></li>
+            <li><a href="/corporate-social-responsibility" className="hover:text-white transition-colors">CSR Policy</a></li>
           </ul>
         </div>
-        <div className="col-span-2 md:text-right">
+        <div>
+          <p className="mb-4 text-white">Support</p>
+          <ul className="space-y-2 font-normal normal-case">
+            <li><a href="/faq" className="hover:text-white transition-colors">FAQ</a></li>
+            <li><a href="/contact-us" className="hover:text-white transition-colors">Contact Us</a></li>
+          </ul>
+        </div>
+        <div className="col-span-2 md:col-span-1 md:text-right">
           <p className="normal-case font-serif text-xl opacity-100">Minta Club &copy; 2025</p>
         </div>
       </div>
