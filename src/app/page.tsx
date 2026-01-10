@@ -377,7 +377,7 @@ export const Footer = () => (
           </ul>
         </div>
         <div className="col-span-1 sm:col-span-2 md:col-span-1 text-left sm:text-center md:text-right">
-          <p className="normal-case font-serif text-xl opacity-100">Minta Club &copy; 2025</p>
+          <p className="normal-case font-serif text-xl opacity-100">© 2025 Minta club pvt ltd. All rights reserved.</p>
         </div>
       </div>
     </div>
