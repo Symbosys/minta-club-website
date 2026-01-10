@@ -386,14 +386,14 @@ export const Footer = () => (
 
 export default function Home() {
   return (
-      <main className="w-full min-h-screen bg-[#FDFBF7]">
-        <Header />
-        <Hero />
-        <TextRevealSection />
-        <HorizontalScroll />
-        <ParallaxImageSection />
-        <FeaturesList />
-        <Footer />
-      </main>
+    <main className="w-full min-h-screen bg-[#FDFBF7]">
+      <Header />
+      <Hero />
+      <TextRevealSection />
+      <HorizontalScroll />
+      <ParallaxImageSection />
+      <FeaturesList />
+      <Footer />
+    </main>
   );
 }
