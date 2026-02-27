@@ -16,7 +16,7 @@ export default function ContactUsPage() {
   const [copied, setCopied] = useState(false);
 
   const handleCopyEmail = () => {
-    navigator.clipboard.writeText("info@mintaclub.com");
+    navigator.clipboard.writeText("supprot@mintaclub.com");
     setCopied(true);
     setTimeout(() => setCopied(false), 2000);
   };
@@ -55,20 +55,11 @@ export default function ContactUsPage() {
                 </p>
 
                 <div className="space-y-1 text-gray-600 text-lg leading-relaxed mb-8">
-                  <p>HI-76, Harmu Colony,</p>
-                  <p>Ranchi - 834002</p>
-                  <p>Jharkhand, India</p>
+               
+                  <p>Ranchi, Jharkhand</p>
                 </div>
 
-                <a 
-                  href="https://www.google.com/maps/search/?api=1&query=HI-76+Harmu+Colony+Ranchi" 
-                  target="_blank" 
-                  rel="noopener noreferrer"
-                  className="inline-flex items-center gap-2 text-purple-600 font-medium hover:text-purple-800 transition-colors group/link"
-                >
-                  View on Google Maps
-                  <ExternalLink className="w-4 h-4 transition-transform group-hover/link:translate-x-1" />
-                </a>
+                
               </div>
             </div>
 
@@ -95,10 +86,10 @@ export default function ContactUsPage() {
 
                 <div className="bg-white/10 backdrop-blur-md rounded-2xl p-4 border border-white/10 flex items-center justify-between gap-4 group/email">
                   <a 
-                    href="mailto:info@mintaclub.com" 
+                    href="mailto:support@mintaclub.com" 
                     className="font-mono text-lg sm:text-xl font-semibold truncate hover:text-purple-200 transition-colors"
                   >
-                    info@mintaclub.com
+                    support@mintaclub.com
                   </a>
                   
                   <button 

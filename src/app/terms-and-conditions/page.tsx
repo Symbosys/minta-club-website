@@ -123,7 +123,7 @@ export default function TermsAndConditionsPage() {
             <h3 className="text-xl font-bold mb-3 text-gray-900">Grievances</h3>
             <p className="text-gray-700 mb-2">Minta Club Private Limited</p>
             <p className="text-gray-700 mb-2">HI-76, Harmu Colony, Ranchi - 834002</p>
-            <p className="text-gray-700">Email: <a href="mailto:info@mintaclub.com" className="text-indigo-600 hover:underline">info@mintaclub.com</a></p>
+            <p className="text-gray-700">Email: <a href="mailto:support@mintaclub.com" className="text-indigo-600 hover:underline">support@mintaclub.com</a></p>
           </div>
         </div>
       </div>

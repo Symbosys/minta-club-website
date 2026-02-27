@@ -16,7 +16,7 @@ export const Header = () => {
   const navLinks = [
     { label: "Our Ventures", href: "#ventures" },
     { label: "Mission", href: "#mission" },
-    { label: "Culture", href: "#culture" },
+    { label: "Our Culture", href: "#culture" },
     // { label: "Contact Us", href: "#contact" },
   ];
 
@@ -593,7 +593,7 @@ export const Footer = () => (
         <div className="flex flex-col md:flex-row gap-6 sm:gap-8 items-start md:items-center">
           <button className="bg-white text-black px-6 sm:px-8 py-3 sm:py-4 rounded-full font-bold text-sm tracking-widest hover:bg-indigo-500 hover:text-white transition-colors duration-300">
             <a
-              href="mailto:mintaclub@gmail.com"
+              href="mailto:support@mintaclub.com"
               className="hover:text-white transition-colors"
             >
               CONTACT US
@@ -618,7 +618,7 @@ export const Footer = () => (
           <ul className="space-y-2 font-normal normal-case">
             <li><a href="/terms-and-conditions" className="hover:text-white transition-colors">Terms and Conditions</a></li>
             <li><a href="/privacy-policy" className="hover:text-white transition-colors">Privacy Policy</a></li>
-            <li><a href="/refund-policy" className="hover:text-white transition-colors">Refund Policy</a></li>
+            {/* <li><a href="/refund-policy" className="hover:text-white transition-colors">Refund Policy</a></li> */}
             <li><a href="/corporate-social-responsibility" className="hover:text-white transition-colors">CSR Policy</a></li>
           </ul>
         </div>

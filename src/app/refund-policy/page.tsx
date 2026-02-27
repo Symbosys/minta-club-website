@@ -57,7 +57,7 @@ export default function RefundPolicyPage() {
             <p className="text-lg font-semibold text-gray-900">Minta Club Private Limited</p>
             <p className="text-lg">HI-76, Harmu Colony, Ranchi - 834002</p>
             <p className="text-lg">
-              Email: <a href="mailto:info@mintaclub.com" className="text-indigo-600 hover:underline font-medium">info@mintaclub.com</a>
+              Email: <a href="mailto:support@mintaclub.com" className="text-indigo-600 hover:underline font-medium">support@mintaclub.com</a>
             </p>
           </div>
         </div>

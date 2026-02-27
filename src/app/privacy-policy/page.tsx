@@ -82,7 +82,7 @@ export default function PrivacyPolicyPage() {
             <p className="text-gray-700 mb-2 font-semibold">Minta Club Private Limited</p>
             <p className="text-gray-700 mb-2">HI-76, Harmu Colony, Ranchi - 834002</p>
             <p className="text-gray-700">
-              Email: <a href="mailto:info@mintaclub.com" className="text-indigo-600 hover:underline font-medium">info@mintaclub.com</a>
+              Email: <a href="mailto:support@mintaclub.com" className="text-indigo-600 hover:underline font-medium">support@mintaclub.com</a>
             </p>
           </div>
         </div>
